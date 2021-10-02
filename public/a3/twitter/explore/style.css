@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html,
@@ -16,7 +18,7 @@ body {
     display: inline-block;
     position: fixed;
     top: 0px;
-    width: 25%;
+    width: 24.75%;
     height: 100%;
     border-right: 0.5px solid;
     border-color: rgb(47, 51, 54);
@@ -26,8 +28,8 @@ body {
     display: inline-block;
     position: fixed;
     top: 0px;
-    width: 25%;
-    margin-left: 75%;
+    width: 20%;
+    margin-left: 66.25%;
     height: 100%;
     border-left: 0.5px solid;
     border-color: rgb(47, 51, 54);
@@ -37,36 +39,100 @@ body {
     display: inline-block;
     position: fixed;
     top: 0px;
-    margin-left: 25%;
-    height: 15%;
-    width: 50%;
+    margin-left: 24.7%;
+    height: 13.5%;
+    width: 41.6%;
     border-bottom: 0.5px solid;
     border-color: rgb(47, 51, 54);
     margin-bottom: 5px;
 }
 
 .search {
-    display: block;
-    margin-left: 25px;
-    margin-top: 7.5px;
-    padding: 15px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 4.5px;
+    padding: 13.9px;
     padding-left: 55px;
-    padding-right: 350px;
-    border-radius: 500px;
+    padding-right: 282px;
+    border-radius: 50px;
     border: none;
-    outline-width: 0;
     line-height: 15px;
     font-size: 15px;
     background-color: rgb(32, 35, 39);
     caret-color: white;
     letter-spacing: 0.02em;
+    text-decoration-color: white;
+    color: white;
+}
+
+.search:focus {
+    outline: none !important;
+    border: 1px solid rgb(29, 155, 240);
+    background: black;
 }
 
 .fa-search {
     float: left;
-    margin-left: 50px;
-    margin-top: 15.9px;
+    margin-left: 40px;
+    margin-top: 18.5px;
     position: fixed;
     z-index: 2;
     color: rgb(110, 118, 125);
 }
+
+.fa-cog {
+    float: right;
+    margin-top: 19px;
+    margin-right: 12px;
+    color: rgb(29, 161, 241);
+}
+
+.search:focus+.fa-search {
+    outline: none !important;
+    color: rgb(29, 155, 240);
+}
+
+.wd-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 16px;
+    margin-top: 5px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.wd-explore {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+}
+
+.wd-explore:focus {
+    border-bottom: 4px solid rgb(29, 161, 242);
+}
+
+.wd-for-you:after,
+.wd-trending:after,
+.wd-covid:after,
+.wd-news:after,
+.wd-sports:after,
+.wd-entertainment:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.wd-for-you:hover,
+.wd-trending:hover,
+.wd-covid:hover,
+.wd-news:hover,
+.wd-sports:hover,
+.wd-entertainment:hover {
+    background-color: rgba(217, 217, 217, 0.1);
+}
+
+.wd-explore:visited {}
