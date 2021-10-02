@@ -24,6 +24,10 @@ body {
     border-color: rgb(47, 51, 54);
 }
 
+.wa-column-middle {
+    position: relative;
+}
+
 .wd-column-right {
     display: inline-block;
     position: fixed;
@@ -87,11 +91,6 @@ body {
     color: rgb(29, 161, 241);
 }
 
-.search:focus+.fa-search {
-    outline: none !important;
-    color: rgb(29, 155, 240);
-}
-
 .wd-nav {
     display: flex;
     flex-flow: row wrap;
@@ -112,6 +111,8 @@ body {
 }
 
 .wd-explore:focus {
+    color: white;
+    font-weight: 600;
     border-bottom: 4px solid rgb(29, 161, 242);
 }
 
@@ -135,4 +136,90 @@ body {
     background-color: rgba(217, 217, 217, 0.1);
 }
 
-.wd-explore:visited {}
+.wd-bottom-row {
+    display: inline-block;
+    position: fixed;
+    top: 14%;
+    z-index: 3;
+    height: 100%;
+    width: 41.6%;
+    border-top: 0.5px solid rgb(47, 51, 54);
+    margin-left: 24.7%;
+}
+
+.wd-news-block {
+    display: inline-block;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 82px;
+    width: 80%;
+}
+
+.wd-news-image-block {
+    display: inline-block;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 105px;
+    width: 80%;
+}
+
+.wd-news-section {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-bottom: 4px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wd-news-topic {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wd-news-tweets {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wd-news-image {
+    position: fixed;
+    right: 16px;
+    width: 39%;
+}
+
+.wd-news-image-format {
+    width: 84.4px;
+    height: 84.4px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.wd-account {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wd-account-icon {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border-radius: 12px;
+    margin-right: 4px;
+    top: 3px;
+}
+
+.wd-account-verified {
+    position: relative;
+    fill: white;
+    height: 16px;
+    width: 16px;
+    top: 3px;
+}
