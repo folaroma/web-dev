@@ -100,4 +100,26 @@ h2.header {
 
 .wd-verified {
     float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wd-left-items {
+    width: 30%;
+}
+
+.wd-left-items-md {
+    width: 40%;
+}
+
+.wd-left-items-sm {
+    width: 70%;
+}
+
+.wd-btn-tweet {
+    width: 40%;
+}
+
+.wd-btn-tweet-sm {
+    width: 70%;
 }
