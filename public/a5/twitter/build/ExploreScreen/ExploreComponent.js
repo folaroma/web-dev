@@ -37,7 +37,7 @@ const ExploreComponent = () => {
             </div>
             <div class="row">
                 <div class="wrapper position-relative ms-1 mb-2">
-                    <img src="images/starship.jpeg" alt="" class="wd-starship" />
+                    <img src="images/starship.jpeg" alt="" class="wd-starship"/>
                     <div class="overlay ms-2">
                         <h2 class="header position-absolute bottom-0 fw-bold text-black">SpaceX's Starship</h2>
                     </div>

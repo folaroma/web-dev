@@ -16,7 +16,7 @@ function PostSummaryItem(post) {
     const TopicImage = () => {
         return (`
             <div class="wd-topic-image">
-                <img src= ${image} class="wd-image-icon float-end">
+                <img src= ${image} class="wd-image-icon float-end ms-2 mt-1">
             </div>
         `)
     }
@@ -25,10 +25,14 @@ function PostSummaryItem(post) {
         if (topic !== '') {
             return (`
                 <div class="row gx-0">
-                    <div class="wd-topic">
+                    <div class="wd-topic text-secondary fs-6">
                         ${topic}
                     </div>
                 </div>
+            `)
+        }
+        else {
+            return (`
             `)
         }
     }
@@ -38,17 +42,21 @@ function PostSummaryItem(post) {
             return (`
                 <div class="row gx-0">
                     <div class="wd-account">
-                        <div class="wd-title float-start">
+                        <div class="wd-title float-start fw-bold">
                             ${username}
                         </div>
                         <div class="wd-verified">
                             <img src="./images/verified.png" class="wd-verified-icon float-start ms-1 me-1" style="margin-top: 3px;">
                         </div>
-                        <div class="wd-time">
+                        <div class="wd-time text-secondary">
                             - ${time}
                         </div>
                     </div>
                 </div>
+            `)
+        }
+        else {
+            return (`
             `)
         }
     }
@@ -57,10 +65,14 @@ function PostSummaryItem(post) {
         if (title !== '') {
             return (`
                 <div class="row gx-0">
-                    <div class="wd-description">
+                    <div class="wd-description fw-bold">
                         ${title}
                     </div>
                 </div>
+            `)
+        }
+        else {
+            return (`
             `)
         }
     }
@@ -69,7 +81,7 @@ function PostSummaryItem(post) {
         if (tweets !== "") {
             return (`
                 <div class="row gx-0">
-                    <div class="wd-tweets">
+                    <div class="wd-tweets text-secondary">
                         ${tweets}
                     </div>
                 </div>

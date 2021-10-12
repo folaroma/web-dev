@@ -12,9 +12,8 @@ h2.header {
 }
 
 .wd-starship {
-    object-fit: cover;
-    object-position: 50% 50%;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .wd-verified-icon {
