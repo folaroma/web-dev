@@ -1,3 +1,5 @@
+import PostSummaryList from "../PostSummaryList/index.js";
+
 const ExploreComponent = () => {
     return (`
             <div class="row">
@@ -15,7 +17,7 @@ const ExploreComponent = () => {
                 </span>
             </div>
             <div class="row">
-            <ul class="nav nav-tabs mb-2 ms-3 w-100">
+                <ul class="nav nav-tabs mb-2 ms-3 w-100">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">For you</a>
                     </li>
@@ -33,12 +35,19 @@ const ExploreComponent = () => {
                     </li>
                 </ul>
             </div>
-            <div class="wrapper position-relative ms-1">
-                    <img src="images/starship.jpeg" alt="" class="w-100" />
+            <div class="row">
+                <div class="wrapper position-relative ms-1 mb-2">
+                    <img src="images/starship.jpeg" alt="" class="wd-starship" />
                     <div class="overlay ms-2">
                         <h2 class="header position-absolute bottom-0 fw-bold text-black">SpaceX's Starship</h2>
                     </div>
+                </div>
             </div>
+
+            <div class="row">
+                ${PostSummaryList()}
+            </div>
+
     `);
 }
 export default ExploreComponent;
