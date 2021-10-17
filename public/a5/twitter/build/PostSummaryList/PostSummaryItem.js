@@ -1,5 +1,3 @@
-
-
 function PostSummaryItem(post) {
     var image = post.image;
     var topic = post.topic;
@@ -8,8 +6,7 @@ function PostSummaryItem(post) {
     var title = post.title;
     if (post.hasOwnProperty("tweets")) {
         var tweets = post.tweets;
-    }
-    else {
+    } else {
         var tweets = "";
     }
 
@@ -20,7 +17,7 @@ function PostSummaryItem(post) {
             </div>
         `)
     }
-    
+
     const Topic = () => {
         if (topic !== '') {
             return (`
@@ -30,13 +27,12 @@ function PostSummaryItem(post) {
                     </div>
                 </div>
             `)
-        }
-        else {
+        } else {
             return (`
             `)
         }
     }
-    
+
     const Username = () => {
         if (username !== '') {
             return (`
@@ -54,13 +50,12 @@ function PostSummaryItem(post) {
                     </div>
                 </div>
             `)
-        }
-        else {
+        } else {
             return (`
             `)
         }
     }
-    
+
     const Description = () => {
         if (title !== '') {
             return (`
@@ -70,13 +65,12 @@ function PostSummaryItem(post) {
                     </div>
                 </div>
             `)
-        }
-        else {
+        } else {
             return (`
             `)
         }
     }
-    
+
     const Tweets = () => {
         if (tweets !== "") {
             return (`
@@ -86,8 +80,7 @@ function PostSummaryItem(post) {
                     </div>
                 </div>
             `)
-        }
-        else {
+        } else {
             return (`
             `)
         }

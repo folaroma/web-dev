@@ -6,7 +6,6 @@ function PostSummaryList() {
 
     for (let i = 0; i < exploreItems.length; i++) {
         ul = ul + PostSummaryItem(exploreItems[i]);
-        console.log(PostSummaryItem(exploreItems[i]));
     }
 
     console.log(ul)

@@ -11,7 +11,7 @@ const NavigationSidebar = () => {
                     <i class="fas fa-hashtag"></i> Explore
                 </a>
                 <a class="list-group-item" href="/">
-                    <i class="fas fa-bell"></i> Notification
+                    <i class="fas fa-bell"></i> Notifications
                 </a>
                 <a class="list-group-item" href="/">
                     <i class="fas fa-envelope"></i> Messages
