@@ -12,7 +12,7 @@ import "bootswatch/dist/cyborg/bootstrap.min.css";
 const reducer = combineReducers({ tweets: tweets, who });
 const store = createStore(reducer);
 
-const Build = ({ match }) => {
+const Build = () => {
   return (
     <Provider store={store}>
       <div>
@@ -22,7 +22,7 @@ const Build = ({ match }) => {
           component={HomeScreen}
         />
         <Route
-          path={`${match.url}/explore`}
+          path="/a7/twitter/explore"
           exact={true}
           component={ExploreScreen}
         />
