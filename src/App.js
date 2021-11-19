@@ -3,6 +3,9 @@ import HelloWorld from "./components/a7/HelloWorld.js";
 import Practice from "./components/a7/Practice";
 import Build from "./components/a7/Build";
 import ExploreScreen from "./components/a7/Build/ExploreScreen/index.js";
+import Practice8 from "./components/a8/Practice8";
+import Build8 from "./components/a8/Build8";
+import ExploreScreen8 from "./components/a8/Build8/ExploreScreen8";
 import './App.css';
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
               </Route>
               <Route path={"/a7/twitter"} component={Build} />
               <Route path={"/a7/twitter/explore"} component={ExploreScreen} />
+              <Route path={"/a8/twitter"} component={Build8} />
+              <Route path={"/a8/twitter/explore"} component={ExploreScreen8} />
+              <Route path={"/a8/practice"} component={Practice8} />
           </div>
       </BrowserRouter>
 
