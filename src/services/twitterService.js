@@ -1,4 +1,4 @@
-const TWEET_API = 'https://stark-falls-76401.herokuapp.com/api/tweets';
+const TWEET_API = 'https://fathomless-shelf-14922.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
